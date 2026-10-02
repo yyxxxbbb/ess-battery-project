@@ -1,0 +1,10 @@
+﻿구분,MAPE (%),비고
+Train (Batch 1 CV),10.17,프로토콜 그룹 GroupKFold(5) 평균
+Valid (Batch 1 Hold-out),9.15,프로토콜 단위 20% 분리
+Test (Batch 2),24.18,Batch 1 전체 재학습 후 평가
+Gap (Train-Valid),-1.02,(+) : 과적합 의심
+Gap (Valid-Test),15.03,(+) : 배치간 일반화 저하 의심
+Gap (Target-Test),15.08,Target : 원논문 9.1% / (+) : 논문 대비 미달
+Test (Batch 3),15.26,
+Gap (Batch2-Batch3),-8.92,Test 성능 간 비교
+"Gap (Target-Test, Batch 3)",6.16,"Batch 3 기준, 원논문 성능 비교"

@@ -1,0 +1,7 @@
+﻿model,features,best_params,Train (Batch 1 CV),Train fit (참고),Valid (Batch 1 Hold-out),Test (Batch 2),Test (Batch 3),Gap (Train-Valid),Gap (Valid-Test),Gap (Target-Test),Gap (Batch2-Batch3),"Gap (Target-Test, Batch 3)"
+Linear (dq_logvar),dq_logvar,{},10.17,8.88,9.15,24.18,15.26,-1.02,15.03,15.08,-8.92,6.16
+Ridge,"dq_logvar, dq_logmin, dq_mean, dq_kurt, qd_2, qd_max_minus_2","{""ridge__alpha"": 0.31622776601683794}",5.15,4.42,12.81,26.4,24.04,7.66,13.59,17.3,-2.36,14.94
+Lasso,"dq_logvar, dq_logmin, dq_mean, dq_kurt, qd_2, qd_max_minus_2","{""lasso__alpha"": 0.00031622776601683794}",5.46,4.43,12.94,24.77,19.14,7.48,11.83,15.67,-5.63,10.04
+ElasticNet,"dq_logvar, dq_logmin, dq_mean, dq_kurt, qd_2, qd_max_minus_2","{""elasticnet__alpha"": 0.0031622776601683794, ""elasticnet__l1_ratio"": 0.1}",5.22,4.43,12.71,25.41,19.09,7.49,12.7,16.31,-6.32,9.99
+RandomForest,"dq_logvar, dq_logmin, dq_mean, dq_kurt, qd_2, qd_max_minus_2","{""max_depth"": 3}",12.96,5.66,20.6,34.62,15.02,7.64,14.02,25.52,-19.6,5.92
+LightGBM,"dq_logvar, dq_logmin, dq_mean, dq_kurt, qd_2, qd_max_minus_2","{""max_depth"": 2}",14.53,1.43,17.41,32.59,14.82,2.88,15.18,23.49,-17.76,5.72

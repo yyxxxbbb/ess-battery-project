@@ -1,0 +1,10 @@
+# 원본/중간 데이터는 용량이 커서 제외 (data/README.md 참고)
+data/raw/
+data/processed/
+*.mat
+*.pkl
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
+
+.venv/
